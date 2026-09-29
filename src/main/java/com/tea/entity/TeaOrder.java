@@ -51,6 +51,14 @@ public class TeaOrder {
         this.status = status;
     }
 
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
+
     @Override
     public String toString() {
         return String.format("Order[%d] member=%s ¥%s %s",

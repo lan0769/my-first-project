@@ -70,6 +70,14 @@ public class OrderItem {
         this.subtotal = subtotal;
     }
 
+    public String getDrinkName() {
+        return drinkName;
+    }
+
+    public void setDrinkName(String drinkName) {
+        this.drinkName = drinkName;
+    }
+
     @Override
     public String toString() {
         return String.format("  %s × %d   ¥%s = ¥%s",
