@@ -12,10 +12,10 @@ public class Member {
     public Member() {
     }
 
-    public Member(String name, String phone, Integer points) {
+    public Member(String name, String phone) {
         this.name = name;
         this.phone = phone;
-        this.points = points;
+
     }
 
     public Long getId() {
@@ -48,6 +48,14 @@ public class Member {
 
     public void setPoints(Integer points) {
         this.points = points;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
     }
 
     @Override
