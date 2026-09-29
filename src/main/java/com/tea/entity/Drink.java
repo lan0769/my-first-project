@@ -16,12 +16,12 @@ public class Drink {
     public Drink() {
     }
 
-    public Drink(String name, String category, BigDecimal price, Integer stock, Integer isActive) {
+    public Drink(String name, String category, BigDecimal price, Integer stock) {
         this.name = name;
         this.category = category;
         this.price = price;
         this.stock = stock;
-        this.isActive = isActive;
+
     }
 
     public Long getId() {
