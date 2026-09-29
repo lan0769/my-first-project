@@ -11,12 +11,12 @@ public class OrderItem {
     private BigDecimal subtotal=BigDecimal.valueOf(0);
     private String drinkName;
 
-    public OrderItem(Long orderId, Long drinkId, Integer quantity, BigDecimal unitPrice, BigDecimal subtotal) {
-        this.orderId = orderId;
+    public OrderItem(Long drinkId, Integer quantity, BigDecimal unitPrice) {
+
         this.drinkId = drinkId;
         this.quantity = quantity;
         this.unitPrice = unitPrice;
-        this.subtotal = subtotal;
+
     }
 
     public OrderItem() {

@@ -11,8 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StatService {
- public record SaleRank(String drinkName, int totalQty, BigDecimal totalamount){}
- public record MonthlySummary(String period,int orderCount,BigDecimal totalamount,BigDecimal avgAmount){}
+ public record SaleRank(String drinkName, int totalQty, BigDecimal totalAmount){}
+ public record MonthlySummary(String period,int orderCount,BigDecimal totalAmount,BigDecimal avgAmount){}
  public List<SaleRank> topSalesThisMonth(int topN){
      String sql="SELECT d.name AS drink_name"+
              "SUM(oi.quantity) AS total_qty"+

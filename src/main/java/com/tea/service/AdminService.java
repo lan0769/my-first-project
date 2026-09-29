@@ -5,9 +5,9 @@ import com.tea.entity.Admin;
 
 import java.sql.SQLException;
 
-public class AdminServicce {
+public class AdminService {
     private final AdminDao adminDao =new AdminDao();
-    public Admin Login(String username,String password){
+    public Admin login(String username,String password){
         if(isblank(username)||isblank(password)){
             return null;
         }
@@ -17,7 +17,7 @@ public class AdminServicce {
             throw new RuntimeException(e);
         }
     }
-    public boolean ergister(String username,String password){
+    public boolean register(String username,String password){
         if(isblank(username)||isblank(password)){
             throw  new IllegalArgumentException("用户名或密码不能为空");
         }

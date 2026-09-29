@@ -19,7 +19,7 @@ public class OrderService {
     private final OrderItemDao orderItemDao=new OrderItemDao();
     private final DrinkService drinkService =new DrinkService();
     private final MemberService memberService=new MemberService();
-    public record PlaceOrderResult(Long OrderId, BigDecimal totalAmount,Integer pontsAfter) {}
+    public record PlaceOrderResult(Long OrderId, BigDecimal totalAmount,Integer pointsAfter) {}
         public PlaceOrderResult placeOrder(Long memberId, List<OrderItem> items) {
             if (items == null || items.isEmpty()) {
                 throw new IllegalArgumentException("订单至少要 1 杯");
